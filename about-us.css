@@ -1,0 +1,1883 @@
+/* universal */
+body {
+    margin: 0;
+    font-family: "Gotham", sans-serif;
+    ;
+}
+
+.nav-parent {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    width: 95%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 30px;
+}
+
+#check {
+    display: none;
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo img{
+    height: 80px;
+}
+
+.menu-quote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menus {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.menus ul,
+.menus li {
+    margin: 0;
+    padding: 0;
+}
+
+.menus ul {
+    width: 100%;
+    list-style: none;
+}
+
+.menus li {
+    float: left;
+    position: relative;
+    width: auto;
+}
+
+.menus a {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 15px 15px;
+    color: #77838F;
+    font-size: 16px;
+    font-family: "Gotham", sans-serif;
+    ;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+
+.nav .menus ul li a.active {
+    color: rgb(212, 149, 31);
+}
+
+.menus a i {
+    color: #000;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.get-quote {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.get-quote p {
+    color: #109DE4;
+    margin-bottom: 0px !important;
+}
+
+.get-quote p i {
+    color: #109DE4;
+    margin-right: 15px;
+}
+
+.get-quote a {
+    text-decoration: none;
+    font-family: "Gotham", Sans-serif;
+    font-size: 20px;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 31px 45px 66px -30px rgba(255, 239.99999999999994, 138.00000000000003, 0.66) inset;
+    border-radius: 4px 4px 4px 4px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: transparent;
+    background-image: linear-gradient(140deg, #004285 100%, #004285 100%);
+}
+
+
+/* drop down */
+#submenu {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 30px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+
+li:hover ul#submenu {
+    opacity: 1;
+    top: 50px;
+    background-color: white;
+    visibility: visible;
+    display: block;
+    width: 300px;
+}
+
+#submenu li:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #083D77;
+    display: block;
+}
+
+#submenu li {
+    float: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    padding-left: 30px;
+}
+
+#submenu li a {
+    color: #77838F;
+    font-size: 16px;
+    font-family: "Gotham", sans-serif;
+    ;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+
+/* main style */
+.main {
+    position: relative;
+    height: 350px; 
+    background: url('./assets/imgs/new/banner.webp') no-repeat center center;
+    background-size: cover;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+}
+
+h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    z-index: 1; 
+}
+
+/* about us */
+.about-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-child {
+    width: 90%;
+    padding: 50px 0px 20px 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.child-left {
+    width: 48%;
+
+}
+
+.child-left h3{
+    font-weight: 700;
+    font-size: 30px;
+    margin: 5px 0px;
+    font-family: "Gotham", sans-serif;
+    color: #004285;
+}
+
+.child-left p{
+    font-size: 18px;
+    color: #333333;
+    font-family: "Gotham", sans-serif;
+}
+
+.child-right {
+    width: 48%;
+}
+
+.child-right img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.about-us-more {
+    width: 90%;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-more {
+    width: 30% !important;
+}
+
+.info-more h3{
+    font-weight: 700;
+    font-size: 24px;
+    margin: 5px 0px;
+    font-family: "Gotham", sans-serif;
+    color: #004285;
+}
+
+.info-more p{
+    font-size: 18px;
+    color: #333333;
+    font-family: "Gotham", sans-serif;
+}
+
+/* cta on grid */
+.cta-on-grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004285;
+    padding: 30px 0px;
+}
+
+.cta-og-child {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cta-og-left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-og-left h3 {
+    color: #fff;
+    font-family: "Gotham", Sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 48px;
+}
+
+.cta-og-left p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400 !important;
+    color: #e7e7e7;
+    margin: 0px !important;
+}
+
+.cta-og-right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cta-btn {
+    width: 200px;
+    text-decoration: none;
+    font-family: "Gotham", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 31px 45px 66px -30px rgba(255, 239.99999999999994, 138.00000000000003, 0.66) inset;
+    border-radius: 4px 4px 4px 4px;
+    padding: 15px 15px 15px 15px;
+    color: #fff;
+    background-color: transparent;
+    background-image: linear-gradient(140deg, #004285 100%, #004285 100%);
+}
+
+
+/* about us projects */
+.about-us-pro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-pro-child {
+    width: 90%;
+    padding: 0px 0px 0px 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.pro-child-left {
+    width: 48%;
+
+}
+
+.pro-child-left h3{
+    font-weight: 700;
+    font-size: 30px;
+    margin: 5px 0px;
+    font-family: "Gotham", sans-serif;
+    color: #004285;
+}
+
+.pro-child-left p{
+    font-size: 18px;
+    color: #333333;
+    font-family: "Gotham", sans-serif;
+}
+
+.pro-child-right {
+    width: 48%;
+}
+
+.pro-child-right img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.about-us-projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pro-info-more {
+    width: 30% !important;
+}
+
+.pro-info-more h3{
+    font-weight: 700;
+    font-size: 24px;
+    margin: 5px 0px;
+    font-family: "Gotham", sans-serif;
+    color: #004285;
+}
+
+.pro-info-more p{
+    font-size: 18px;
+    color: #333333;
+    font-family: "Gotham", sans-serif;
+}
+
+/*cta mark*/
+
+.cta-mark {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cta-child {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0px 50px 0px;
+}
+
+.cta-child img {
+    height: 100px;
+}
+
+.cta-child a {
+    width: auto;
+    text-decoration: none;
+    font-family: "Gotham", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 31px 45px 66px -30px rgba(255, 239.99999999999994, 138.00000000000003, 0.66) inset;
+    border-radius: 4px 4px 4px 4px;
+    padding: 15px 15px 15px 15px;
+    color: #fff;
+    background-color: transparent;
+    background-image: linear-gradient(140deg, #004285 100%, #004285 100%);
+}
+
+/*footer*/
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0px 0px 0px;
+}
+
+.child-footer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-footer p {
+    font-size: 12px;
+    font-family: "Gotham", sans-serif;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.8rem;
+    padding: 50px 0px;
+    margin: 0px;
+}
+
+.child-footer p a {
+    text-decoration: none;
+    color: #F78223;
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo-description {
+    width: 40%;
+}
+.footer-nav {
+    width: 20%;
+}
+.footer-contact-form {
+    width: 30%;
+}
+
+.footer-logo-description h3{
+    color: #fff;
+    font-family: "Gotham", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    letter-spacing: 0px;
+    padding: 0px 30px !important;
+}
+.footer-nav h3{
+    color: #fff;
+    font-family: "Gotham", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    letter-spacing: 0px;
+}
+.footer-contact-form h3{
+    color: #fff;
+    font-family: "Gotham", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    letter-spacing: 0px;
+}
+
+.footer-logo {
+    max-height: 100px;
+}
+
+.footer-description {
+    font-size: 12px;
+    font-family: "Gotham", sans-serif;
+    text-align: left !important;
+    color: #e7e7e7;
+    font-weight: 400;
+    line-height: 1.8rem;
+    padding: 0px 30px !important;
+    margin-bottom: 20px !important;
+}
+
+/* Vertical navigation menu styles */
+.footer-nav .footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav .footer-menu li {
+    margin: 20px 0;
+}
+
+.footer-nav .footer-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-nav .footer-menu a:hover {
+    text-decoration: underline;
+    color: #F78223;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Contact form styles */
+.footer-contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact-form input {
+    margin: 10px 0px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer-contact-form button {
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-contact-form button:hover {
+    background-color: #005bb5;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 950px) {
+
+    /* Styles for the toggle button */
+    .checkbtn {
+        display: block;
+        color: black;
+        cursor: pointer;
+    }
+    
+    /* Menu visibility when checkbox is checked */
+    #check:checked ~ .menus {
+        left: 0;
+        display: block;
+    }
+    
+    .logo {
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .logo img{
+        height: 60px;
+    }
+    
+    /* Main menu styles */
+    .menus {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        top: 80px;
+        left: -100%;
+        transition: all 0.5s;
+        text-align: left; 
+        display: none; 
+        overflow-x: hidden; 
+    }
+    
+    /* Menu items */
+    .menus ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex; /* Display menu items horizontally */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%;
+    }
+    
+    .menus li {
+        list-style: none;
+        padding: 15px 20px; /* Padding for menu items */
+        font-size: 16px; /* Adjust font size for better visibility */
+        color: white;
+    }
+    
+    /* Links inside menu */
+    .menus ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        /*text-align: left;*/
+        padding: 15px;
+        transition: color 0.3s;
+    }
+    
+    /* Hover effect for menu links */
+    .menus ul li a:hover {
+        color: #d69026; /* Change color on hover */
+    }
+    
+    /* Get quote section styles */
+    .get-quote {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .get-quote p {
+        color: #d69026;
+        display: none; /* Hide on mobile */
+    }
+    
+    .get-quote p i {
+        color: #d69026;
+        margin-right: 15px;
+    }
+    
+    .get-quote a {
+        text-decoration: none;
+        background-color: #e0d03b;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-right: 50px;
+    }
+    
+    /* Dropdown styles for mobile */
+    #submenu {
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+        z-index: 1;
+        background-color: white;
+        width: 100%; /* Ensure submenu takes full width of parent */
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+    }
+    
+    .menus li:hover #submenu {
+        width: 200px !important;
+        opacity: 1;
+        visibility: visible;
+        border-radius: 20px !important;
+        margin-top: 20px;
+        display: block;
+        left: 50%;
+        transform: translate(-50%, 0); /* Center horizontally and adjust vertical positioning */
+        top: 50%; /* Center vertically if needed, adjust as necessary */
+    }
+    
+    #submenu li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; /* Ensure submenu items are displayed in a block format */
+        padding: 10px 20px; /* Padding for submenu items */
+    }
+    
+    #submenu li a {
+        color: black;
+        font-size: 14px; /* Adjust font size for submenu items */
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    /* Styles for the toggle button */
+    .checkbtn {
+        display: block;
+        color: black;
+        cursor: pointer;
+    }
+    
+    /* Menu visibility when checkbox is checked */
+    #check:checked ~ .menus {
+        left: 0;
+        display: block;
+    }
+    
+    .logo {
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .logo img{
+        height: 60px;
+    }
+    
+    /* Main menu styles */
+    .menus {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        top: 80px;
+        left: -100%;
+        transition: all 0.5s;
+        text-align: left; 
+        display: none; 
+        overflow-x: hidden; 
+    }
+    
+    /* Menu items */
+    .menus ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex; /* Display menu items horizontally */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%;
+    }
+    
+    .menus li {
+        list-style: none;
+        padding: 15px 20px; /* Padding for menu items */
+        font-size: 16px; /* Adjust font size for better visibility */
+        color: white;
+    }
+    
+    /* Links inside menu */
+    .menus ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        /*text-align: left;*/
+        padding: 15px;
+        transition: color 0.3s;
+    }
+    
+    /* Hover effect for menu links */
+    .menus ul li a:hover {
+        color: #d69026; /* Change color on hover */
+    }
+    
+    /* Get quote section styles */
+    .get-quote {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .get-quote p {
+        color: #d69026;
+        display: none; /* Hide on mobile */
+    }
+    
+    .get-quote p i {
+        color: #d69026;
+        margin-right: 15px;
+    }
+    
+    .get-quote a {
+        text-decoration: none;
+        background-color: #e0d03b;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-right: 50px;
+    }
+    
+    /* Dropdown styles for mobile */
+    #submenu {
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+        z-index: 1;
+        background-color: white;
+        width: 100%; /* Ensure submenu takes full width of parent */
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+    }
+    
+    .menus li:hover #submenu {
+        width: 200px !important;
+        opacity: 1;
+        visibility: visible;
+        border-radius: 20px !important;
+        margin-top: 20px;
+        display: block;
+        left: 50%;
+        transform: translate(-50%, 0); /* Center horizontally and adjust vertical positioning */
+        top: 50%; /* Center vertically if needed, adjust as necessary */
+    }
+    
+    #submenu li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; /* Ensure submenu items are displayed in a block format */
+        padding: 10px 20px; /* Padding for submenu items */
+    }
+    
+    #submenu li a {
+        color: black;
+        font-size: 14px; /* Adjust font size for submenu items */
+    }
+    
+    /* about us */
+    .about-us {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-us-child {
+        width: 90%;
+        padding: 50px 0px 20px 0px;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .child-left {
+        width: 90%;
+    
+    }
+    
+    .child-left h3{
+        font-weight: 700;
+        font-size: 30px;
+        margin: 5px 0px;
+        font-family: "Gotham", sans-serif;
+        color: #004285;
+    }
+    
+    .child-left p{
+        font-size: 18px;
+        color: #333333;
+        font-family: "Gotham", sans-serif;
+    }
+    
+    .child-right {
+        width: 90%;
+    }
+    
+    .child-right img{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    
+    .about-us-more {
+        width: 90%;
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .info-more {
+        width: 90% !important;
+    }
+    
+    .info-more h3{
+        font-weight: 700;
+        font-size: 24px;
+        margin: 5px 0px;
+        font-family: "Gotham", sans-serif;
+        color: #004285;
+    }
+    
+    .info-more p{
+        font-size: 18px;
+        color: #333333;
+        font-family: "Gotham", sans-serif;
+    }
+    
+    /* about us projects */
+    .about-us-pro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-us-pro-child {
+        width: 90%;
+        padding: 0px 0px 0px 0px;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .pro-child-left {
+        width: 90%;
+        margin-top: 20px;
+    }
+    
+    .pro-child-left h3{
+        font-weight: 700;
+        font-size: 30px;
+        margin: 5px 0px;
+        font-family: "Gotham", sans-serif;
+        color: #004285;
+    }
+    
+    .pro-child-left p{
+        font-size: 18px;
+        color: #333333;
+        font-family: "Gotham", sans-serif;
+    }
+    
+    .pro-child-right {
+        width: 90%;
+    }
+    
+    .pro-child-right img{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    
+    .about-us-projects {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .pro-info-more {
+        width: 90% !important;
+    }
+    
+    .pro-info-more h3{
+        font-weight: 700;
+        font-size: 24px;
+        margin: 5px 0px;
+        font-family: "Gotham", sans-serif;
+        color: #004285;
+    }
+    
+    .pro-info-more p{
+        font-size: 18px;
+        color: #333333;
+        font-family: "Gotham", sans-serif;
+    }
+    
+    /*cta mark*/
+    .cta-mark {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .cta-child {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 50px 0px 50px 0px;
+    }
+    
+    .cta-child img {
+        width: 100%;
+        height: 100px;
+    }
+    
+    .cta-child a {
+        width: auto;
+        text-decoration: none;
+        font-family: "Gotham", Sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        box-shadow: 31px 45px 66px -30px rgba(255, 239.99999999999994, 138.00000000000003, 0.66) inset;
+        border-radius: 4px 4px 4px 4px;
+        padding: 15px 15px 15px 15px;
+        color: #fff;
+        margin-top: 20px;
+        background-color: transparent;
+        background-image: linear-gradient(140deg, #004285 100%, #004285 100%);
+    }
+    
+    /*footer*/
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: 50px 0px 0px 0px;
+    }
+    
+    .child-footer {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .child-footer h2 {
+        color: #004285;
+        font-family: "Gotham", Sans-serif;
+        font-size: 34px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.1em;
+        letter-spacing: 0px;
+    }
+    
+    .child-footer p {
+        font-size: 12px;
+        font-family: "Gotham", sans-serif;
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+        line-height: 1.8rem;
+        padding: 50px 0px;
+        margin: 0px;
+    }
+    
+    .child-footer p a {
+        text-decoration: none;
+        color: #F78223;
+    }
+    
+    .footer-top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .footer-logo-description {
+        width: 100%;
+    }
+    .footer-nav {
+        width: 100%;
+        padding: 0px 30px !important;
+    }
+    .footer-contact-form {
+        width: 100%;
+        padding: 0px 30px !important;
+    }
+    
+    .footer-logo-description h2{
+        color: #fff;
+        font-family: "Gotham", Sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.1em;
+        letter-spacing: 0px;
+        padding: 0px 30px !important;
+    }
+    .footer-nav h2{
+        color: #fff;
+        font-family: "Gotham", Sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.1em;
+        letter-spacing: 0px;
+    }
+    .footer-contact-form h2{
+        color: #fff;
+        font-family: "Gotham", Sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.1em;
+        letter-spacing: 0px;
+    }
+    
+    .footer-logo {
+        max-height: 100px;
+    }
+    
+    .footer-description {
+        font-size: 12px;
+        font-family: "Gotham", sans-serif;
+        text-align: left !important;
+        color: #e7e7e7;
+        font-weight: 400;
+        line-height: 1.8rem;
+        padding: 0px 30px !important;
+    }
+    
+    /* Vertical navigation menu styles */
+    .footer-nav .footer-menu {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-nav .footer-menu li {
+        margin: 20px 0;
+    }
+    
+    .footer-nav .footer-menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .footer-nav .footer-menu a:hover {
+        text-decoration: underline;
+        color: #F78223;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    
+    /* Contact form styles */
+    .footer-contact-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-contact-form input {
+        margin: 10px 0px;
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+    }
+    
+    .footer-contact-form button {
+        padding: 10px;
+        margin: 10px 0px;
+        background-color: #0073e6;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .footer-contact-form button:hover {
+        background-color: #005bb5;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    /* Styles for the toggle button */
+    .checkbtn {
+        display: block;
+        color: black;
+        cursor: pointer;
+    }
+    
+    /* Menu visibility when checkbox is checked */
+    #check:checked ~ .menus {
+        left: 0;
+        display: block;
+    }
+    
+    .logo {
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .logo img{
+        height: 60px;
+    }
+    
+    /* Main menu styles */
+    .menus {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        top: 80px;
+        left: -100%;
+        transition: all 0.5s;
+        text-align: left; 
+        display: none; 
+        overflow-x: hidden; 
+    }
+    
+    /* Menu items */
+    .menus ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex; /* Display menu items horizontally */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%;
+    }
+    
+    .menus li {
+        list-style: none;
+        padding: 15px 20px; /* Padding for menu items */
+        font-size: 16px; /* Adjust font size for better visibility */
+        color: white;
+    }
+    
+    /* Links inside menu */
+    .menus ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        /*text-align: left;*/
+        padding: 15px;
+        transition: color 0.3s;
+    }
+    
+    /* Hover effect for menu links */
+    .menus ul li a:hover {
+        color: #d69026; /* Change color on hover */
+    }
+    
+    /* Get quote section styles */
+    .get-quote {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .get-quote p {
+        color: #d69026;
+        display: none; /* Hide on mobile */
+    }
+    
+    .get-quote p i {
+        color: #d69026;
+        margin-right: 15px;
+    }
+    
+    .get-quote a {
+        text-decoration: none;
+        background-color: #e0d03b;
+        color: white;
+        display: none !important;
+        padding: 10px;
+        border-radius: 5px;
+        margin-right: 50px;
+    }
+    
+    /* Dropdown styles for mobile */
+    #submenu {
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+        z-index: 1;
+        background-color: white;
+        width: 100%; /* Ensure submenu takes full width of parent */
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+    }
+    
+    .menus li:hover #submenu {
+        width: 200px !important;
+        opacity: 1;
+        visibility: visible;
+        border-radius: 20px !important;
+        margin-top: 20px;
+        display: block;
+        left: 50%;
+        transform: translate(-50%, 0); /* Center horizontally and adjust vertical positioning */
+        top: 50%; /* Center vertically if needed, adjust as necessary */
+    }
+    
+    #submenu li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; /* Ensure submenu items are displayed in a block format */
+        padding: 10px 20px; /* Padding for submenu items */
+    }
+    
+    #submenu li a {
+        color: black;
+        font-size: 14px; /* Adjust font size for submenu items */
+    }
+    
+    /* main style */
+    .main {
+        position: relative;
+        height: 350px;
+        background: url('./assets/imgs/new/banner.webp') no-repeat center center;
+        background-size: cover;
+    }
+    
+    .layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    
+    h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 2em;
+        font-weight: 700;
+        text-align: center;
+        z-index: 1;
+    }
+    
+    /* about us */
+    .about-us {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-us-child {
+        width: 90%;
+        padding: 50px 0px 20px 0px;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .child-left {
+        width: 90%;
+    
+    }
+    
+    .child-left h3{
+        font-weight: 700;
+        font-size: 30px;
+        margin: 5px 0px;
+        font-family: "Gotham", sans-serif;
+        color: #004285;
+    }
+    
+    .child-left p{
+        font-size: 18px;
+        color: #333333;
+        font-family: "Gotham", sans-serif;
+    }
+    
+    .child-right {
+        width: 90%;
+    }
+    
+    .child-right img{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    
+    .about-us-more {
+        width: 90%;
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .info-more {
+        width: 90% !important;
+    }
+    
+    .info-more h3{
+        font-weight: 700;
+        font-size: 24px;
+        margin: 5px 0px;
+        font-family: "Gotham", sans-serif;
+        color: #004285;
+    }
+    
+    .info-more p{
+        font-size: 18px;
+        color: #333333;
+        font-family: "Gotham", sans-serif;
+    }
+    
+    /* about us projects */
+    .about-us-pro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-us-pro-child {
+        width: 90%;
+        padding: 0px 0px 0px 0px;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .pro-child-left {
+        width: 90%;
+        margin-top: 20px;
+    }
+    
+    .pro-child-left h3{
+        font-weight: 700;
+        font-size: 30px;
+        margin: 5px 0px;
+        font-family: "Gotham", sans-serif;
+        color: #004285;
+    }
+    
+    .pro-child-left p{
+        font-size: 18px;
+        color: #333333;
+        font-family: "Gotham", sans-serif;
+    }
+    
+    .pro-child-right {
+        width: 90%;
+    }
+    
+    .pro-child-right img{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    
+    .about-us-projects {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .pro-info-more {
+        width: 90% !important;
+    }
+    
+    .pro-info-more h3{
+        font-weight: 700;
+        font-size: 24px;
+        margin: 5px 0px;
+        font-family: "Gotham", sans-serif;
+        color: #004285;
+    }
+    
+    .pro-info-more p{
+        font-size: 18px;
+        color: #333333;
+        font-family: "Gotham", sans-serif;
+    }
+    
+    /*cta mark*/
+    .cta-mark {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .cta-child {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 50px 0px 50px 0px;
+    }
+    
+    .cta-child img {
+        width: 100%;
+        height: 100px;
+    }
+    
+    .cta-child a {
+        width: auto;
+        text-decoration: none;
+        font-family: "Gotham", Sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        box-shadow: 31px 45px 66px -30px rgba(255, 239.99999999999994, 138.00000000000003, 0.66) inset;
+        border-radius: 4px 4px 4px 4px;
+        padding: 15px 15px 15px 15px;
+        color: #fff;
+        margin-top: 20px;
+        background-color: transparent;
+        background-image: linear-gradient(140deg, #004285 100%, #004285 100%);
+    }
+    
+    /*footer*/
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        padding: 50px 0px 0px 0px;
+    }
+    
+    .child-footer {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .child-footer h2 {
+        color: #004285;
+        font-family: "Gotham", Sans-serif;
+        font-size: 34px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.1em;
+        letter-spacing: 0px;
+    }
+    
+    .child-footer p {
+        font-size: 12px;
+        font-family: "Gotham", sans-serif;
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+        line-height: 1.8rem;
+        padding: 50px 0px;
+        margin: 0px;
+    }
+    
+    .child-footer p a {
+        text-decoration: none;
+        color: #F78223;
+    }
+    
+    .footer-top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .footer-logo-description {
+        width: 100%;
+    }
+    .footer-nav {
+        width: 100%;
+        padding: 0px 30px !important;
+    }
+    .footer-contact-form {
+        width: 100%;
+        padding: 0px 30px !important;
+    }
+    
+    .footer-logo-description h2{
+        color: #fff;
+        font-family: "Gotham", Sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.1em;
+        letter-spacing: 0px;
+        padding: 0px 30px !important;
+    }
+    .footer-nav h2{
+        color: #fff;
+        font-family: "Gotham", Sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.1em;
+        letter-spacing: 0px;
+    }
+    .footer-contact-form h2{
+        color: #fff;
+        font-family: "Gotham", Sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.1em;
+        letter-spacing: 0px;
+    }
+    
+    .footer-logo {
+        max-height: 100px;
+    }
+    
+    .footer-description {
+        font-size: 12px;
+        font-family: "Gotham", sans-serif;
+        text-align: left !important;
+        color: #e7e7e7;
+        font-weight: 400;
+        line-height: 1.8rem;
+        padding: 0px 30px !important;
+    }
+    
+    /* Vertical navigation menu styles */
+    .footer-nav .footer-menu {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-nav .footer-menu li {
+        margin: 20px 0;
+    }
+    
+    .footer-nav .footer-menu a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .footer-nav .footer-menu a:hover {
+        text-decoration: underline;
+        color: #F78223;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    
+    /* Contact form styles */
+    .footer-contact-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-contact-form input {
+        margin: 10px 0px;
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+    }
+    
+    .footer-contact-form button {
+        padding: 10px;
+        margin: 10px 0px;
+        background-color: #0073e6;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .footer-contact-form button:hover {
+        background-color: #005bb5;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* Styles for the toggle button */
+    .checkbtn {
+        display: block;
+        color: black;
+        cursor: pointer;
+    }
+    
+    /* Menu visibility when checkbox is checked */
+    #check:checked ~ .menus {
+        left: 0;
+        display: block;
+    }
+    
+    .logo {
+        text-align: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .logo img{
+        height: 60px;
+    }
+    
+    /* Main menu styles */
+    .menus {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        top: 80px;
+        left: -100%;
+        transition: all 0.5s;
+        text-align: left; 
+        display: none; 
+        overflow-x: hidden; 
+    }
+    
+    /* Menu items */
+    .menus ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex; /* Display menu items horizontally */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%;
+    }
+    
+    .menus li {
+        list-style: none;
+        padding: 15px 20px; /* Padding for menu items */
+        font-size: 16px; /* Adjust font size for better visibility */
+        color: white;
+    }
+    
+    /* Links inside menu */
+    .menus ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        /*text-align: left;*/
+        padding: 15px;
+        transition: color 0.3s;
+    }
+    
+    /* Hover effect for menu links */
+    .menus ul li a:hover {
+        color: #d69026; /* Change color on hover */
+    }
+    
+    /* Get quote section styles */
+    .get-quote {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .get-quote p {
+        color: #d69026;
+        display: none; /* Hide on mobile */
+    }
+    
+    .get-quote p i {
+        color: #d69026;
+        margin-right: 15px;
+    }
+    
+    .get-quote a {
+        display: none !important;
+        text-decoration: none;
+        background-color: #e0d03b;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-right: 50px;
+    }
+    
+    /* Dropdown styles for mobile */
+    #submenu {
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+        z-index: 1;
+        background-color: white;
+        width: 100%; /* Ensure submenu takes full width of parent */
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+    }
+    
+    .menus li:hover #submenu {
+        width: 200px !important;
+        opacity: 1;
+        visibility: visible;
+        border-radius: 20px !important;
+        margin-top: 20px;
+        display: block;
+        left: 50%;
+        transform: translate(-50%, 0); /* Center horizontally and adjust vertical positioning */
+        top: 50%; /* Center vertically if needed, adjust as necessary */
+    }
+    
+    #submenu li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; /* Ensure submenu items are displayed in a block format */
+        padding: 10px 20px; /* Padding for submenu items */
+    }
+    
+    #submenu li a {
+        color: black;
+        font-size: 14px; /* Adjust font size for submenu items */
+    }
+}
